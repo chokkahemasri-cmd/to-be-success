@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Forever Love ❤️</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -16,6 +19,7 @@
     }
 
     body{
+
       font-family:'Poppins',sans-serif;
 
       background:
@@ -29,13 +33,14 @@
       background-attachment:fixed;
 
       min-height:100vh;
-      overflow-x:hidden;
 
       display:flex;
       justify-content:center;
       align-items:center;
 
       padding:20px;
+
+      overflow-x:hidden;
       position:relative;
     }
 
@@ -49,11 +54,12 @@
     .heart{
       position:absolute;
       color:rgba(255,255,255,0.7);
-      animation:float 8s linear infinite;
       font-size:22px;
+      animation:float 8s linear infinite;
     }
 
     @keyframes float{
+
       0%{
         transform:translateY(100vh) scale(0.5);
         opacity:0;
@@ -70,6 +76,7 @@
     }
 
     .love-card{
+
       position:relative;
       z-index:1;
 
@@ -77,12 +84,15 @@
       max-width:750px;
 
       background:rgba(255,255,255,0.15);
+
       backdrop-filter:blur(12px);
 
       border-radius:30px;
+
       padding:50px 35px;
 
       color:white;
+
       text-align:center;
 
       box-shadow:0 10px 40px rgba(0,0,0,0.25);
@@ -93,6 +103,7 @@
     }
 
     @keyframes fadeIn{
+
       from{
         opacity:0;
         transform:translateY(30px);
@@ -105,76 +116,113 @@
     }
 
     .title{
+
       font-family:'Dancing Script',cursive;
+
       font-size:4rem;
+
       margin-bottom:10px;
+
       text-shadow:2px 2px 10px rgba(0,0,0,0.3);
     }
 
     .subtitle{
+
       font-size:1.2rem;
+
       margin-bottom:30px;
+
       opacity:0.95;
     }
 
     .photo{
+
       width:100%;
       height:180px;
+
       object-fit:cover;
+
       border-radius:20px;
+
       border:4px solid rgba(255,255,255,0.8);
+
       box-shadow:0 8px 25px rgba(0,0,0,0.25);
+
       transition:0.4s;
     }
 
     .photo:hover{
+
       transform:scale(1.05);
     }
 
     .message{
+
       font-size:1.1rem;
+
       line-height:1.8;
+
       margin-bottom:35px;
     }
 
     .btn{
+
       display:inline-block;
+
       padding:14px 35px;
+
       background:white;
+
       color:#ff4f81;
-      border-radius:50px;
-      text-decoration:none;
+
       border:none;
+
+      border-radius:50px;
+
       font-weight:600;
+
       cursor:pointer;
+
       transition:0.3s;
+
       box-shadow:0 5px 15px rgba(0,0,0,0.2);
     }
 
     .btn:hover{
+
       background:#ff4f81;
+
       color:white;
+
       transform:translateY(-3px);
     }
 
-    .footer{
-      margin-top:30px;
-      font-size:0.95rem;
-      opacity:0.9;
-    }
-
     .quiz-question{
+
       margin-bottom:25px;
     }
 
     .quiz-question h3{
+
       margin-bottom:10px;
     }
 
     .quiz-question label{
+
       display:block;
+
       margin:8px 0;
+
       cursor:pointer;
+    }
+
+    .footer{
+
+      margin-top:30px;
+
+      font-size:0.95rem;
+
+      opacity:0.9;
     }
 
     @media(max-width:600px){
@@ -189,6 +237,7 @@
     }
 
   </style>
+
 </head>
 
 <body>
@@ -209,25 +258,26 @@
   <!-- LOCK SCREEN -->
 
   <div id="lockScreen"
-    style="
-    position:fixed;
-    inset:0;
-    background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffb199);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    z-index:9999;
-    padding:20px;
-    ">
+
+  style="
+  position:fixed;
+  inset:0;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffb199);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  padding:20px;
+  ">
 
     <div style="
-      background:white;
-      padding:40px;
-      border-radius:25px;
-      text-align:center;
-      max-width:400px;
-      width:100%;
-      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    max-width:400px;
+    width:100%;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
     ">
 
       <h2 style="
@@ -235,18 +285,30 @@
       margin-bottom:15px;
       font-size:2rem;
       ">
+
       🔒 Love Lock
+
       </h2>
 
-      <p style="margin-bottom:15px;color:#444;">
-        Enter the special date 💖
+      <p style="
+      margin-bottom:15px;
+      color:#444;
+      ">
+
+      Enter the special date 💖
+
       </p>
 
       <input
+
       type="text"
+
       id="datePassword"
+
       maxlength="10"
+
       placeholder="DD-MM-YYYY"
+
       oninput="formatDate(this)"
 
       style="
@@ -260,7 +322,9 @@
       text-align:center;
       ">
 
-      <button onclick="unlockPage()"
+      <button
+
+      onclick="unlockPage()"
 
       style="
       background:#ff4f81;
@@ -278,12 +342,15 @@
       </button>
 
       <p id="errorText"
+
       style="
       margin-top:15px;
       color:red;
       display:none;
       ">
+
       Wrong date 💔
+
       </p>
 
     </div>
@@ -294,34 +361,16 @@
 
   <div class="love-card" id="mainContent" style="display:none;">
 
-    <!-- Tags -->
+    <h1 class="title">
 
-    <div style="
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-bottom:20px;
-    ">
+      Forever & Always ❤
 
-      <span style="background:rgba(255,255,255,0.2);padding:8px 16px;border-radius:30px;">
-        #ForeverLove
-      </span>
-
-      <span style="background:rgba(255,255,255,0.2);padding:8px 16px;border-radius:30px;">
-        #Soulmate
-      </span>
-
-      <span style="background:rgba(255,255,255,0.2);padding:8px 16px;border-radius:30px;">
-        #LoveStory
-      </span>
-
-    </div>
-
-    <h1 class="title">Forever & Always ❤</h1>
+    </h1>
 
     <p class="subtitle">
+
       A small page made with love 💖
+
     </p>
 
     <!-- Photos -->
@@ -345,6 +394,7 @@
     <!-- Video -->
 
     <video controls autoplay muted loop
+
     style="
     width:100%;
     border-radius:20px;
@@ -359,7 +409,9 @@
     <!-- Music -->
 
     <audio id="bgMusic" loop>
+
       <source src="song.mp3" type="audio/mpeg">
+
     </audio>
 
     <!-- Message -->
@@ -374,7 +426,7 @@
 
     </p>
 
-    <!-- Quiz -->
+    <!-- QUIZ -->
 
     <div style="
     margin-top:40px;
@@ -401,17 +453,17 @@
         <h3>1. Why do you love me? 💖</h3>
 
         <label>
-          <input type="radio" name="q1">
+          <input type="radio" name="q1" value="correct" checked>
           Becoz i am special ❤️
         </label>
 
         <label>
-          <input type="radio" name="q1">
+          <input type="radio" name="q1" value="wrong">
           option 1 😅
         </label>
 
         <label>
-          <input type="radio" name="q1">
+          <input type="radio" name="q1" value="wrong">
           becoz i have no choice 😂
         </label>
 
@@ -424,17 +476,17 @@
         <h3>2. Who is more romantic? 💕</h3>
 
         <label>
-          <input type="radio" name="q2">
+          <input type="radio" name="q2" value="wrong">
           You ❤️
         </label>
 
         <label>
-          <input type="radio" name="q2">
+          <input type="radio" name="q2" value="correct" checked>
           Me 😅
         </label>
 
         <label>
-          <input type="radio" name="q2">
+          <input type="radio" name="q2" value="wrong">
           Both 😂
         </label>
 
@@ -447,17 +499,17 @@
         <h3>3. What is cutest about me? 🥰</h3>
 
         <label>
-          <input type="radio" name="q3">
+          <input type="radio" name="q3" value="correct" checked>
           Caring ❤️
         </label>
 
         <label>
-          <input type="radio" name="q3">
+          <input type="radio" name="q3" value="wrong">
           smile 😊
         </label>
 
         <label>
-          <input type="radio" name="q3">
+          <input type="radio" name="q3" value="wrong">
           eyes 👀
         </label>
 
@@ -470,18 +522,18 @@
         <h3>4. Who says sorry first? 😭</h3>
 
         <label>
-          <input type="radio" name="q4">
+          <input type="radio" name="q4" value="wrong">
           Mani ❤️
         </label>
 
         <label>
-          <input type="radio" name="q4">
+          <input type="radio" name="q4" value="wrong">
           Hema 😅
         </label>
 
         <label>
-          <input type="radio" name="q4">
-          Nobody 😂
+          <input type="radio" name="q4" value="correct" checked>
+          both 😂
         </label>
 
       </div>
@@ -493,17 +545,17 @@
         <h3>5. Will you stay forever with me? 💍</h3>
 
         <label>
-          <input type="radio" name="q5">
+          <input type="radio" name="q5" value="wrong">
           Yes Forever ❤️
         </label>
 
         <label>
-          <input type="radio" name="q5">
+          <input type="radio" name="q5" value="wrong">
           Of course 😅
         </label>
 
         <label>
-          <input type="radio" name="q5">
+          <input type="radio" name="q5" value="correct" checked>
           All of the above 😁
         </label>
 
@@ -521,24 +573,26 @@
 
       </div>
 
-      <!-- Result -->
+      <!-- RESULT -->
 
       <h2 id="scoreText"
+
       style="
       text-align:center;
       margin-top:25px;
       ">
+
       </h2>
 
     </div>
 
     <div class="footer">
+
       Made with ❤ for someone special
+
     </div>
 
   </div>
-
-<!-- SCRIPT -->
 
 <script>
 
@@ -549,7 +603,6 @@ function formatDate(input){
   if(value.length>2 && value.length<=4){
 
     value=value.slice(0,2)+'-'+value.slice(2);
-
   }
 
   else if(value.length>4){
@@ -558,7 +611,6 @@ function formatDate(input){
     value.slice(0,2)+'-'+
     value.slice(2,4)+'-'+
     value.slice(4,8);
-
   }
 
   input.value=value;
@@ -577,25 +629,20 @@ function unlockPage(){
 
     document.getElementById('mainContent').style.display='block';
 
-    const music =
-    document.getElementById('bgMusic');
-
-    music.play();
-
+    document.getElementById('bgMusic').play();
   }
 
   else{
 
     document.getElementById('errorText').style.display='block';
-
   }
 }
 
-/* QUIZ FUNCTION */
-
 function checkQuiz(){
 
-  let answers="";
+  let score = 0;
+
+  let answers = "";
 
   for(let i=1;i<=5;i++){
 
@@ -607,37 +654,59 @@ function checkQuiz(){
       const answerText =
       selected.parentElement.innerText.trim();
 
-      answers += `
+      if(selected.value === "correct"){
 
-      <div style="
-      background:rgba(255,255,255,0.12);
-      padding:12px;
-      border-radius:12px;
-      margin-bottom:10px;
-      text-align:left;
-      ">
-      💕 Question ${i}: ${answerText}
-      </div>
+        score++;
 
-      `;
+        answers += `
+
+        <div style="
+        background:rgba(0,255,120,0.2);
+        padding:12px;
+        border-radius:12px;
+        margin-bottom:10px;
+        border:2px solid lime;
+        ">
+        ✅ Question ${i}: ${answerText}
+        </div>
+
+        `;
+      }
+
+      else{
+
+        answers += `
+
+        <div style="
+        background:rgba(255,0,0,0.2);
+        padding:12px;
+        border-radius:12px;
+        margin-bottom:10px;
+        border:2px solid red;
+        ">
+        ❌ Question ${i}: ${answerText}
+        </div>
+
+        `;
+      }
     }
+  }
 
-    else{
+  let message="";
 
-      answers += `
+  if(score===5){
 
-      <div style="
-      background:rgba(255,255,255,0.12);
-      padding:12px;
-      border-radius:12px;
-      margin-bottom:10px;
-      text-align:left;
-      ">
-      😅 Question ${i}: No answer selected
-      </div>
+    message="💖 Perfect Couple 💖";
+  }
 
-      `;
-    }
+  else if(score>=3){
+
+    message="😍 True Love Energy 😍";
+  }
+
+  else{
+
+    message="🥺 Need More Love 🥺";
   }
 
   document.getElementById('scoreText').innerHTML = `
@@ -646,14 +715,14 @@ function checkQuiz(){
   font-size:2rem;
   margin-bottom:20px;
   ">
-  💖 Your Love Score: 5/5 💖
+  💖 Your Love Score: ${score}/5 💖
   </div>
 
   <div style="
   font-size:1.3rem;
   margin-bottom:20px;
   ">
-  😍 Perfect Couple 😍
+  ${message}
   </div>
 
   <h3 style="margin-bottom:15px;">
