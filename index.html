@@ -12,7 +12,6 @@
     *{
       margin:0;
       padding:0;
-
       box-sizing:border-box;
     }
 
@@ -121,14 +120,10 @@
     .photo{
       width:100%;
       height:180px;
-
       object-fit:cover;
-
       border-radius:20px;
       border:4px solid rgba(255,255,255,0.8);
-
       box-shadow:0 8px 25px rgba(0,0,0,0.25);
-
       transition:0.4s;
     }
 
@@ -144,21 +139,15 @@
 
     .btn{
       display:inline-block;
-
       padding:14px 35px;
-
       background:white;
       color:#ff4f81;
-
       border-radius:50px;
       text-decoration:none;
       border:none;
-
       font-weight:600;
       cursor:pointer;
-
       transition:0.3s;
-
       box-shadow:0 5px 15px rgba(0,0,0,0.2);
     }
 
@@ -185,6 +174,7 @@
     .quiz-question label{
       display:block;
       margin:8px 0;
+      cursor:pointer;
     }
 
     @media(max-width:600px){
@@ -348,7 +338,8 @@
       <img src="photo3.jpg" class="photo">
       <img src="photo4.jpg" class="photo">
       <img src="photo5.jpg" class="photo">
-      <img src="photo6.jpg" class="photo">  
+      <img src="photo6.jpg" class="photo">
+
     </div>
 
     <!-- Video -->
@@ -366,189 +357,186 @@
     </video>
 
     <!-- Music -->
-    <!-- Music -->
 
-<audio id="bgMusic" loop>
+    <audio id="bgMusic" loop>
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
 
-  <source src="song.mp3" type="audio/mpeg">
+    <!-- Message -->
 
-</audio>
+    <p class="message">
 
-<!-- Message -->
+      bae i don't know why i am attracted too much 💖  
+      no matter how many fights happen,  
+      I never want to give up on us ❤️  
+      u r always my boy and i am only ur girl 💕  
+      LOVE YOU 😘🥀
 
-<p class="message">
+    </p>
 
-  bae i don't know why i am attracted too much 💖  
-  no matter how many fights happen,  
-  I never want to give up on us ❤️ and idhi vinu ..code chatgpt emo kani matter and feel nadhi raah
-  u r always my boy and i am only ur girl ..chala kastapadi chesa page emaiana mistake unte chusi chudanatu ga udhile 
-  okna last but not the least LOVE YOU💕😘🥀
+    <!-- Quiz -->
 
-</p>
+    <div style="
+    margin-top:40px;
+    text-align:left;
+    background:rgba(255,255,255,0.12);
+    padding:25px;
+    border-radius:20px;
+    ">
 
-<!-- Quiz -->
+      <h2 style="
+      text-align:center;
+      margin-bottom:25px;
+      font-size:2rem;
+      ">
 
-<div style="
-margin-top:40px;
-text-align:left;
-background:rgba(255,255,255,0.12);
-padding:25px;
-border-radius:20px;
-">
+      Love Quiz 💕
 
-  <h2 style="
-  text-align:center;
-  margin-bottom:25px;
-  font-size:2rem;
-  ">
+      </h2>
 
-  Love Quiz 💕
+      <!-- Q1 -->
 
-  </h2>
+      <div class="quiz-question">
 
-  <!-- Q1 -->
+        <h3>1. Why do you love me? 💖</h3>
 
-  <div class="quiz-question">
+        <label>
+          <input type="radio" name="q1">
+          Becoz i am special ❤️
+        </label>
 
-    <h3>1. Why do you love me? 💖</h3>
+        <label>
+          <input type="radio" name="q1">
+          option 1 😅
+        </label>
 
-    <label>
-      <input type="radio" name="q1" value="correct">
-      Becoz i am special ❤️
-    </label>
+        <label>
+          <input type="radio" name="q1">
+          becoz i have no choice 😂
+        </label>
 
-    <label>
-      <input type="radio" name="q1" value="wrong">
-      option 1 😅
-    </label>
+      </div>
 
-    <label>
-      <input type="radio" name="q1" value="wrong">
-      becoz i have no choice 😂
-    </label>
+      <!-- Q2 -->
+
+      <div class="quiz-question">
+
+        <h3>2. Who is more romantic? 💕</h3>
+
+        <label>
+          <input type="radio" name="q2">
+          You ❤️
+        </label>
+
+        <label>
+          <input type="radio" name="q2">
+          Me 😅
+        </label>
+
+        <label>
+          <input type="radio" name="q2">
+          Both 😂
+        </label>
+
+      </div>
+
+      <!-- Q3 -->
+
+      <div class="quiz-question">
+
+        <h3>3. What is cutest about me? 🥰</h3>
+
+        <label>
+          <input type="radio" name="q3">
+          Caring ❤️
+        </label>
+
+        <label>
+          <input type="radio" name="q3">
+          smile 😊
+        </label>
+
+        <label>
+          <input type="radio" name="q3">
+          eyes 👀
+        </label>
+
+      </div>
+
+      <!-- Q4 -->
+
+      <div class="quiz-question">
+
+        <h3>4. Who says sorry first? 😭</h3>
+
+        <label>
+          <input type="radio" name="q4">
+          Mani ❤️
+        </label>
+
+        <label>
+          <input type="radio" name="q4">
+          Hema 😅
+        </label>
+
+        <label>
+          <input type="radio" name="q4">
+          Nobody 😂
+        </label>
+
+      </div>
+
+      <!-- Q5 -->
+
+      <div class="quiz-question">
+
+        <h3>5. Will you stay forever with me? 💍</h3>
+
+        <label>
+          <input type="radio" name="q5">
+          Yes Forever ❤️
+        </label>
+
+        <label>
+          <input type="radio" name="q5">
+          Of course 😅
+        </label>
+
+        <label>
+          <input type="radio" name="q5">
+          All of the above 😁
+        </label>
+
+      </div>
+
+      <!-- Submit -->
+
+      <div style="text-align:center;margin-top:30px;">
+
+        <button onclick="checkQuiz()" class="btn">
+
+          Submit Answers 💖
+
+        </button>
+
+      </div>
+
+      <!-- Result -->
+
+      <h2 id="scoreText"
+      style="
+      text-align:center;
+      margin-top:25px;
+      ">
+      </h2>
+
+    </div>
+
+    <div class="footer">
+      Made with ❤ for someone special
+    </div>
 
   </div>
-
-  <!-- Q2 -->
-
-  <div class="quiz-question">
-
-    <h3>2. Who is more romantic? 💕</h3>
-
-    <label>
-      <input type="radio" name="q2" value="correct">
-      You ❤️
-    </label>
-
-    <label>
-      <input type="radio" name="q2" value="wrong">
-      Me 😅
-    </label>
-
-    <label>
-      <input type="radio" name="q2" value="wrong">
-      Both 😂
-    </label>
-
-  </div>
-
-  <!-- Q3 -->
-
-  <div class="quiz-question">
-
-    <h3>3. What is cutest about me? 🥰</h3>
-
-    <label>
-      <input type="radio" name="q3" value="correct">
-      Caring ❤️
-    </label>
-
-    <label>
-      <input type="radio" name="q3" value="wrong">
-      smile 😊
-    </label>
-
-    <label>
-      <input type="radio" name="q3" value="wrong">
-      eyes 👀
-    </label>
-
-  </div>
-
-  <!-- Q4 -->
-
-  <div class="quiz-question">
-
-    <h3>4. Who says sorry first? 😭</h3>
-
-    <label>
-      <input type="radio" name="q4" value="correct">
-      Mani ❤️
-    </label>
-
-    <label>
-      <input type="radio" name="q4" value="wrong">
-      Hema 😅
-    </label>
-
-    <label>
-      <input type="radio" name="q4" value="wrong">
-      Nobody 😂
-    </label>
-
-  </div>
-
-  <!-- Q5 -->
-
-  <div class="quiz-question">
-
-    <h3>5. Will you stay forever with me? 💍</h3>
-
-    <label>
-      <input type="radio" name="q5" value="correct">
-      Yes Forever ❤️
-    </label>
-
-    <label>
-      <input type="radio" name="q5" value="wrong">
-      Of cource😅
-    </label>
-
-    <label>
-      <input type="radio" name="q5" value="wrong">
-      All of the above 😁
-    </label>
-
-  </div>
-
-  <!-- Submit -->
-
-  <div style="text-align:center;margin-top:30px;">
-
-    <button onclick="checkQuiz()" class="btn">
-
-      Submit Answers 💖
-
-    </button>
-
-  </div>
-
-  <!-- Score -->
-
-  <h2 id="scoreText"
-  style="
-  text-align:center;
-  margin-top:25px;
-  ">
-  </h2>
-
-</div>
-
-<div class="footer">
-  Made with ❤ for someone special
-</div>
-
-</div>
 
 <!-- SCRIPT -->
 
@@ -603,43 +591,78 @@ function unlockPage(){
   }
 }
 
+/* QUIZ FUNCTION */
+
 function checkQuiz(){
 
-  let score=0;
+  let answers="";
 
   for(let i=1;i<=5;i++){
 
-    const selected=
+    const selected =
     document.querySelector(`input[name="q${i}"]:checked`);
 
-    if(selected && selected.value==='correct'){
+    if(selected){
 
-      score++;
+      const answerText =
+      selected.parentElement.innerText.trim();
 
+      answers += `
+
+      <div style="
+      background:rgba(255,255,255,0.12);
+      padding:12px;
+      border-radius:12px;
+      margin-bottom:10px;
+      text-align:left;
+      ">
+      💕 Question ${i}: ${answerText}
+      </div>
+
+      `;
+    }
+
+    else{
+
+      answers += `
+
+      <div style="
+      background:rgba(255,255,255,0.12);
+      padding:12px;
+      border-radius:12px;
+      margin-bottom:10px;
+      text-align:left;
+      ">
+      😅 Question ${i}: No answer selected
+      </div>
+
+      `;
     }
   }
 
-  let message='';
+  document.getElementById('scoreText').innerHTML = `
 
-  if(score===5){
+  <div style="
+  font-size:2rem;
+  margin-bottom:20px;
+  ">
+  💖 Your Love Score: 5/5 💖
+  </div>
 
-    message='💖 Perfect Couple 💖';
+  <div style="
+  font-size:1.3rem;
+  margin-bottom:20px;
+  ">
+  😍 Perfect Couple 😍
+  </div>
 
-  }
+  <h3 style="margin-bottom:15px;">
+  Your Answers 💌
+  </h3>
 
-  else if(score>=3){
+  ${answers}
 
-    message='😍 True Love Energy 😍';
-
-  }
-
-  else{
-
-    message='🥺 Need More love 🥺';
-  }
-
-  document.getElementById('scoreText').innerHTML=
-  `💖 Your Love Score: ${score}/5 <br>${message}`;
+  `;
 }
 
 </script>
